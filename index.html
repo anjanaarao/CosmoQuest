@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <header>
+        <h1>Journey Through the Cosmos</h1>
+        <p>Click on a planet to discover an interesting fact!</p>
+    </header>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div id="mercury-container" class="planet-container">
+            <button id="mercury" class="planet"></button>
+            <span class="planet-label">Mercury</span>
+        </div>
+        <div id="venus-container" class="planet-container">
+            <button id="venus" class="planet"></button>
+            <span class="planet-label">Venus</span>
+        </div>
+        <div id="earth-container" class="planet-container">
+            <button id="earth" class="planet"></button>
+            <span class="planet-label">Earth</span>
+        </div>
+        <div id="mars-container" class="planet-container">
+            <button id="mars" class="planet"></button>
+            <span class="planet-label">Mars</span>
+        </div>
+        <div id="jupiter-container" class="planet-container">
+            <button id="jupiter" class="planet"></button>
+            <span class="planet-label">Jupiter</span>
+        </div>
+        <div id="saturn-container" class="planet-container">
+            <button id="saturn" class="planet"></button>
+            <span class="planet-label">Saturn</span>
+        </div>
+        <div id="uranus-container" class="planet-container">
+            <button id="uranus" class="planet"></button>
+            <span class="planet-label">Uranus</span>
+        </div>
+        <div id="neptune-container" class="planet-container">
+            <button id="neptune" class="planet"></button>
+            <span class="planet-label">Neptune</span>
+        </div>
+    </div>
+    <div id="info-card" class="info-card">
+        <h2 id="planet-name"></h2>
+        <p id="planet-fact"></p>
+        <button class="close-btn">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

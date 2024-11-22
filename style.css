@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000000, #1a237e);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: glow 2s ease-in-out infinite alternate;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2196f3;
+}
+
+.solar-system {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    perspective: 1000px;
+}
+
+.sun {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at center, #ffd700, #ff4500);
+    border-radius: 50%;
+    box-shadow: 0 0 50px #ff4500;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.planet-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: orbit linear infinite;
+}
+
+.planet {
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.planet-label {
+    color: white;
+    font-size: 0.8rem;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.planet-container:hover .planet-label {
+    opacity: 1;
+}
+
+.planet:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#mercury-container { animation-duration: 5s; }
+#venus-container { animation-duration: 8s; }
+#earth-container { animation-duration: 10s; }
+#mars-container { animation-duration: 12s; }
+#jupiter-container { animation-duration: 15s; }
+#saturn-container { animation-duration: 18s; }
+#uranus-container { animation-duration: 21s; }
+#neptune-container { animation-duration: 24s; }
+
+#mercury { width: 20px; height: 20px; background: #b0b0b0; }
+#venus { width: 25px; height: 25px; background: #f5deb3; }
+#earth { width: 28px; height: 28px; background: #1e90ff; }
+#mars { width: 22px; height: 22px; background: #b22222; }
+#jupiter { width: 45px; height: 45px; background: #ffdead; }
+#saturn { width: 40px; height: 40px; background: #daa520; }
+#uranus { width: 35px; height: 35px; background: #00ced1; }
+#neptune { width: 34px; height: 34px; background: #4682b4; }
+
+.info-card {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    display: none;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.close-btn {
+    background: #ff4444;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #ff6666;
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 30px #ff4500; }
+    50% { box-shadow: 0 0 50px #ff4500; }
+    100% { box-shadow: 0 0 30px #ff4500; }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2196f3; }
+    to { text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2196f3; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    .solar-system { height: 40vh; }
+    .planet { transform: scale(0.8); }
+    .planet-label { font-size: 0.7rem; }
+}
