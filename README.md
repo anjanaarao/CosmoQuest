@@ -24,3 +24,8 @@ An interactive web application that lets users explore our solar system! This pr
   - Dynamic content loading
   - Event handling
   - Planet information management
+ 
+## Installation
+
+1. Clone the repository.
+2. Open the HTML files in your preferred browser.
