@@ -1,5 +1,5 @@
 # 🚀 CosmoQuest  
-**Journey Through the Cosmos – A Beginner-Friendly Space Explorer**
+**Journey Through the Cosmos – A Beginner-Friendly Space Explorer Website**
 
 ---
 
