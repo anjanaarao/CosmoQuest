@@ -1,4 +1,4 @@
-# CosmoQuest: Explore. Learn. Discover the Cosmos
+# CosmoQuest
 An interactive web application that lets users explore our solar system! This project features an animated visualization of planets orbiting the sun, complete with interesting facts about each celestial body.
 
 ## Features
