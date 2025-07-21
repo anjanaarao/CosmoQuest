@@ -1,36 +1,36 @@
-# CosmoQuest  
-**Journey Through the Cosmos – A Beginner-Friendly Space Explorer Website**
+# CosmoQuest
+
+**Journey Through the Cosmos – A Beginner-Friendly Space Explorer**
+
+CosmoQuest is an interactive web application that lets users explore the universe through NASA's Astronomy Picture of the Day (APOD). It's perfect for beginners learning frontend development, showcasing the use of real APIs, animations, and responsive design using HTML, CSS, and JavaScript.
 
 ---
 
-## Introduction  
-**CosmoQuest** is a lightweight interactive web app that lets users explore the solar system by clicking on planets to discover fun, real-world facts. Built using HTML, CSS, and JavaScript, it's designed to demonstrate frontend fundamentals through engaging visuals and responsive design.
+## Features
+
+- **NASA APOD Integration** – Fetches and displays the Astronomy Picture of the Day with image/video, explanation, and credits  
+- **Animated Star Background** – Simulates a starry night using dynamic JS-based animation  
+- **Clickable Planets** – Learn unique facts about each planet in our solar system
+- **Animated Orbits** – CSS-powered motion mimics real planetary revolution
 
 ---
 
-## Features  
+## Tech Stack
 
-- **Clickable Planets** – Learn unique facts about each planet in our solar system  
-- **Animated Orbits** – CSS-powered motion mimics real planetary revolution  
-- **Responsive Design** – Mobile-first layout using Flexbox and media queries  
-- **Accessible & Semantic** – Beginner-friendly code with clear structure and ARIA labels  
-
----
-
-## Tech Stack  
-
-- **HTML5**, **CSS3**, **Vanilla JavaScript**  
-- Responsive design using **Flexbox**, **Grid**, and **keyframe animations**  
-- Hosted on **GitHub Pages**
+- **HTML5** – Semantic structure  
+- **CSS3** – Flexbox, gradients, keyframe animations  
+- **Vanilla JavaScript** – API integration, DOM manipulation  
+- **NASA Open API** – For fetching Astronomy Picture of the Day  
 
 ---
 
-## Live Demo  
-🔗 [View CosmoQuest](https://anjanaarao.github.io/CosmoQuest/)
+## =Live Demo
+
+🔗 [View CosmoQuest](https://anjanaarao.github.io/CosmoQuest)  
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 ```bash
 git clone https://github.com/anjanaarao/CosmoQuest.git
