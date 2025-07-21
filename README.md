@@ -24,7 +24,7 @@ CosmoQuest is an interactive web application that lets users explore the univers
 
 ---
 
-## =Live Demo
+## Live Demo
 
 🔗 [View CosmoQuest](https://anjanaarao.github.io/CosmoQuest)  
 
